@@ -1,0 +1,20 @@
+node_modules/
+.DS_Store
+
+# Runtime state. Live runs and profiles of real people are never committed (docs/DATA_ETHICS.md §7).
+data/runs/*
+!data/runs/.gitkeep
+data/archive/
+data/custom-researchers.json
+data/profile-overrides.json
+data/triggers.json
+
+# Build output; the Markdown is the source of truth.
+docs/pdf/
+
+# Credentials stay outside the published project.
+.env
+.env.*
+!.env.example
+*.pem
+*.p12

@@ -1,0 +1,11 @@
+{
+  "triggers": [
+    {
+      "id": "orgsci-call-2026",
+      "title": "Org Science special issue: AI-Assisted Frontiers in Organizational Science",
+      "addedAt": "2026-07-24T00:00:00.000Z",
+      "source": "OrgSci/syncminds/triggers/orgsci_call.md — reflexively, the call that prompted this system's own creation",
+      "text": "Call for prototypes — Organization Science special issue 'AI-Assisted Frontiers in Organizational Science' (editors: Gartenberg, Hasan, Pierce, Bail, Dai, Hauser, Rahman, Zhang). Core question: what kinds of knowledge can we create when the tools of inquiry themselves change? Wanted: contributions that reimagine what social science research looks like in an AI-enabled world — wild ideas and radical innovation, not incremental improvement. Contribution types include: AI-enabled research loops under human direction (when do they produce valid science vs 'Potemkin villages of slop'?); reusable research infrastructure (custom models, multi-agent workflows, simulation environments other scholars can use); new forms of measurement (constructs in text, audio, or video previously impossible to observe at scale); AI-enabled qualitative and theory-building work; synthetic social systems; new approaches to established research designs (improving what can be credibly inferred); critical or boundary-setting work (identifying where AI systems drift, obscure judgment, or undermine validity). Explicitly NOT wanted: conventional papers with AI-related content, typical applications, or AI slop with minimal author engagement. Stage 1 submission: short proposal (1,500-2,000 words) stating the core intended scientific contribution, what has been done, key risks, and how organizational and social science would change if it succeeds."
+    }
+  ]
+}

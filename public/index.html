@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ResearcherConnect — could my LLM talk to yours?</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='9' cy='20' r='4' fill='%23E8ECF8'/%3E%3Ccircle cx='23' cy='10' r='4' fill='%231E9B7E'/%3E%3Cline x1='12' y1='18' x2='20' y2='12' stroke='%231E9B7E' stroke-width='2' stroke-dasharray='3 2'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="wordmark">
+      <h1>Researcher<span>Connect</span></h1>
+      <p class="tagline">Nice to meet you — could my LLM talk to yours?</p>
+    </div>
+
+    <nav class="rail" id="rail" aria-label="Research design pipeline">
+      <!-- five steps injected by rail.js -->
+    </nav>
+
+    <div class="masthead-right">
+      <button id="guide-btn" class="btn btn-ghost" aria-label="Open the guide">Guide</button>
+      <span class="provider-badge" id="provider-badge" title="LLM provider in use">…</span>
+      <div class="view-tabs" role="tablist">
+        <button class="view-tab is-active" data-view="observatory" role="tab" aria-selected="true">Observatory</button>
+        <button class="view-tab" data-view="dashboard" role="tab" aria-selected="false">Findings</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="view-observatory" class="view is-active">
+    <aside class="sidebar">
+      <section class="trigger-panel">
+        <h2 class="panel-title">Opportunity trigger</h2>
+        <p class="panel-sub">The concrete opportunity — a call for papers, a project, an idea — that conversations assess collaboration potential for.</p>
+        <select id="trigger-select" class="dock-select select-block" aria-label="Active opportunity trigger"></select>
+        <button id="add-trigger" class="btn btn-block">＋ New trigger</button>
+      </section>
+      <section class="probe-queue">
+        <h2 class="panel-title">Probe queue</h2>
+        <p class="panel-sub">Unconnected pairs, least structurally predictable first — where classical tie-formation theory predicts nothing.</p>
+        <select id="focus-select" class="dock-select select-block" aria-label="Focus the queue on one researcher"></select>
+        <ol id="candidate-list" class="candidate-list"></ol>
+      </section>
+      <section>
+        <button id="add-researcher" class="btn btn-add-researcher">＋ Add researcher</button>
+      </section>
+      <section class="legend">
+        <h2 class="panel-title">Reading the chart</h2>
+        <ul class="legend-list">
+          <li><span class="swatch swatch-existing"></span> Existing collaboration</li>
+          <li><span class="swatch swatch-latent"></span> Latent opportunity</li>
+          <li><span class="swatch swatch-borderline"></span> Borderline</li>
+          <li><span class="swatch swatch-predicted"></span> Structurally predicted</li>
+          <li><span class="swatch swatch-active"></span> Agents in conversation</li>
+        </ul>
+        <p class="legend-note">Node size = existing ties. Amber ring = real researcher (profile pending verification). Click two nodes to propose a probe.</p>
+      </section>
+    </aside>
+
+    <section class="stage">
+      <canvas id="network" aria-label="Collaboration network of researchers"></canvas>
+      <div id="node-tip" class="node-tip" hidden></div>
+      <div id="pair-dock" class="pair-dock" hidden>
+        <span id="pair-dock-label"></span>
+        <select id="pair-dock-mode" class="dock-select" aria-label="How the system judges this pair">
+          <option value="conversation">Agents talk — 6 turns + brief</option>
+          <option value="judge:unguided">Judges vote — unguided</option>
+          <option value="judge:guided">Judges vote — guided (complementarity)</option>
+        </select>
+        <select id="pair-dock-provider" class="dock-select" aria-label="Run with provider"></select>
+        <button id="pair-dock-run" class="btn btn-primary">Let the agents talk</button>
+        <button id="pair-dock-clear" class="btn btn-ghost" aria-label="Clear selection">✕</button>
+      </div>
+      <p class="stage-hint" id="stage-hint">Select a pair from the probe queue — or click two researchers.</p>
+    </section>
+
+    <aside class="inspector" id="inspector" hidden>
+      <header class="inspector-head">
+        <h2 id="inspector-title" class="inspector-title"></h2>
+        <button id="inspector-close" class="btn btn-ghost" aria-label="Close panel">✕</button>
+      </header>
+      <div id="inspector-body" class="inspector-body"></div>
+    </aside>
+  </main>
+
+  <main id="view-dashboard" class="view">
+    <div class="dashboard" id="dashboard"></div>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

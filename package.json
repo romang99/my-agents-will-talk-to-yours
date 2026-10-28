@@ -1,0 +1,17 @@
+{
+  "name": "researcherconnect",
+  "version": "0.3.0",
+  "description": "Nice to meet you \u2014 could my LLM talk to yours? A visual agentic system for discovering latent research collaboration opportunities. Successor to SyncMinds v0.1.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "demo": "PROVIDER=demo node server/index.js",
+    "test": "node --test 'test/*.test.js'",
+    "docs": "node tools/build-docs.mjs",
+    "check:publishing": "node tools/check-publishing.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

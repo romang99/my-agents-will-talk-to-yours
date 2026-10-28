@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "researcherconnect-demo",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "demo"],
+      "port": 4870
+    },
+    {
+      "name": "researcherconnect",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "port": 4870
+    }
+  ]
+}

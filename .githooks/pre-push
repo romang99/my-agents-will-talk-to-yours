@@ -1,0 +1,6 @@
+#!/bin/sh
+# Inspect the actual commits being pushed, including their reachable history.
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ "$local_sha" = "0000000000000000000000000000000000000000" ] && continue
+  node tools/check-publishing.mjs --ref "$local_sha" || exit 1
+done

@@ -1,0 +1,471 @@
+{
+  "id": "run-2026-10-28T05-15-36-216Z-synthetic-aiko-tanaka+synthetic-priya-raman",
+  "pair": [
+    "synthetic-aiko-tanaka",
+    "synthetic-priya-raman"
+  ],
+  "createdAt": "2026-10-28T05:15:36.216Z",
+  "provider": {
+    "name": "demo",
+    "model": "demo-replay (no LLM)"
+  },
+  "status": "awaiting-validation",
+  "stage": "validation",
+  "baseline": {
+    "pair": [
+      "synthetic-aiko-tanaka",
+      "synthetic-priya-raman"
+    ],
+    "existingTie": true,
+    "scores": {
+      "organisationalFoci": 0,
+      "homophily": 0.33333333333333337,
+      "cumulativeAdvantage": 0.2,
+      "triadicClosure": 0
+    },
+    "composite": 0.107,
+    "sharedNeighbours": [],
+    "breakdown": [
+      {
+        "mechanism": "organisationalFoci",
+        "score": 0,
+        "weight": 0.3,
+        "inputs": "no shared institution (UK university (synthetic composite) vs Mid-sized US research university (synthetic composite)) → 0",
+        "contribution": 0
+      },
+      {
+        "mechanism": "homophily",
+        "score": 0.33333333333333337,
+        "weight": 0.2,
+        "inputs": "seniority 2 vs 3 → status similarity 0.67; shared method families: none (0/3 → 0.00); blend 50/50",
+        "contribution": 0.067
+      },
+      {
+        "mechanism": "cumulativeAdvantage",
+        "score": 0.2,
+        "weight": 0.2,
+        "inputs": "existing ties 2 × 2 → √4 of 10 possible",
+        "contribution": 0.04
+      },
+      {
+        "mechanism": "triadicClosure",
+        "score": 0,
+        "weight": 0.3,
+        "inputs": "no shared collaborators to broker an introduction",
+        "contribution": 0
+      }
+    ],
+    "formula": "composite = 0.30×0.00 + 0.20×0.33 + 0.20×0.20 + 0.30×0.00 = 0.11"
+  },
+  "trigger": {
+    "id": "orgsci-call-2026",
+    "title": "Org Science special issue: AI-Assisted Frontiers in Organizational Science",
+    "text": "Call for prototypes — Organization Science special issue 'AI-Assisted Frontiers in Organizational Science' (editors: Gartenberg, Hasan, Pierce, Bail, Dai, Hauser, Rahman, Zhang). Core question: what kinds of knowledge can we create when the tools of inquiry themselves change? Wanted: contributions that reimagine what social science research looks like in an AI-enabled world — wild ideas and radical innovation, not incremental improvement. Contribution types include: AI-enabled research loops under human direction (when do they produce valid science vs 'Potemkin villages of slop'?); reusable research infrastructure (custom models, multi-agent workflows, simulation environments other scholars can use); new forms of measurement (constructs in text, audio, or video previously impossible to observe at scale); AI-enabled qualitative and theory-building work; synthetic social systems; new approaches to established research designs (improving what can be credibly inferred); critical or boundary-setting work (identifying where AI systems drift, obscure judgment, or undermine validity). Explicitly NOT wanted: conventional papers with AI-related content, typical applications, or AI slop with minimal author engagement. Stage 1 submission: short proposal (1,500-2,000 words) stating the core intended scientific contribution, what has been done, key risks, and how organizational and social science would change if it succeeds."
+  },
+  "personas": {
+    "synthetic-aiko-tanaka": {
+      "id": "synthetic-aiko-tanaka",
+      "name": "Aiko Tanaka",
+      "synthetic": true,
+      "verified": true,
+      "title": "Senior Lecturer in Organization Studies",
+      "affiliation": "School of Management, UK university (synthetic composite)",
+      "field": "Organization studies / sociology of work",
+      "methods": [
+        "ethnography and participant observation",
+        "longitudinal qualitative case studies",
+        "grounded theory"
+      ],
+      "interests": [
+        "how professionals make sense of AI in their daily work",
+        "occupational identity and expertise under automation",
+        "invisible work and articulation work in sociotechnical systems"
+      ],
+      "collaborationStyle": "Slow, deep engagement with field sites; protective of interpretive rigour; joins teams that treat qualitative work as theory-building, not decoration.",
+      "reflections": [
+        "Field notes keep surfacing the same pattern: professionals quietly repair AI outputs and hide the effort — who studies where that invisible work goes?",
+        "Sceptical of purely computational accounts of work; open to collaborations that let ethnography talk back to the models."
+      ]
+    },
+    "synthetic-priya-raman": {
+      "id": "synthetic-priya-raman",
+      "name": "Priya Raman",
+      "synthetic": true,
+      "verified": true,
+      "title": "Associate Professor of Computational Social Science",
+      "affiliation": "Department of Computational Social Science, Mid-sized US research university (synthetic composite)",
+      "field": "Computational social science",
+      "methods": [
+        "large-scale network analysis",
+        "agent-based modelling and simulation",
+        "text-as-data / NLP pipelines",
+        "quantitative field studies"
+      ],
+      "interests": [
+        "science of science and research team formation",
+        "collaboration networks and knowledge recombination",
+        "LLM agents as models of social behaviour",
+        "measurement validity in computational methods"
+      ],
+      "collaborationStyle": "Brings data pipelines and formal models; insists on measurement validity checks before trusting any computational construct; happiest as the methods anchor on a team.",
+      "reflections": [
+        "Wondering whether LLM-agent simulations can be validated as models of real social processes, not just plausible text generators.",
+        "Looking for partners with access to real collaboration-network data to ground her simulations."
+      ]
+    }
+  },
+  "transcript": [],
+  "opportunity": null,
+  "assessment": {
+    "mechanisms": [
+      {
+        "mechanism": "organisationalFoci",
+        "score": 0,
+        "explanation": "No shared institutional setting (UK university (synthetic composite) vs Mid-sized US research university (synthetic composite)); foci would not bring them together."
+      },
+      {
+        "mechanism": "homophily",
+        "score": 0.33333333333333337,
+        "explanation": "Different standing or methodological worlds; homophily is a weak explanation here."
+      },
+      {
+        "mechanism": "cumulativeAdvantage",
+        "score": 0.2,
+        "explanation": "At least one side is weakly connected, so cumulative advantage predicts little."
+      },
+      {
+        "mechanism": "triadicClosure",
+        "score": 0,
+        "explanation": "No shared contacts exist to broker this tie."
+      }
+    ],
+    "summary": "None of the four classical mechanisms plausibly produces this tie — if the constructed opportunity is real, it is latent in the paper's sense."
+  },
+  "ecp": 0.1,
+  "classification": "borderline",
+  "decision": null,
+  "error": null,
+  "log": [
+    {
+      "at": "2026-10-28T05:15:36.216Z",
+      "msg": "Run started with provider demo (demo-replay (no LLM)), judge mode: 3 model(s) × 10 votes, prompt \"unguided\" — trigger: Org Science special issue: AI-Assisted Frontiers in Organizational Science"
+    },
+    {
+      "at": "2026-10-28T05:15:36.216Z",
+      "msg": "Persona cards composed from layered mind files"
+    },
+    {
+      "at": "2026-10-28T05:15:36.339Z",
+      "msg": "Vote 1/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.340Z",
+      "msg": "Vote 2/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.341Z",
+      "msg": "Vote 3/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.341Z",
+      "msg": "Vote 4/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.462Z",
+      "msg": "Vote 5/30 — demo-judge-a: yes"
+    },
+    {
+      "at": "2026-10-28T05:15:36.463Z",
+      "msg": "Vote 6/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.464Z",
+      "msg": "Vote 7/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.464Z",
+      "msg": "Vote 8/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.584Z",
+      "msg": "Vote 9/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.585Z",
+      "msg": "Vote 10/30 — demo-judge-a: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.586Z",
+      "msg": "Vote 11/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.586Z",
+      "msg": "Vote 12/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.705Z",
+      "msg": "Vote 13/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.706Z",
+      "msg": "Vote 14/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.707Z",
+      "msg": "Vote 15/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.707Z",
+      "msg": "Vote 16/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.827Z",
+      "msg": "Vote 17/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.828Z",
+      "msg": "Vote 18/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.829Z",
+      "msg": "Vote 19/30 — demo-judge-b: yes"
+    },
+    {
+      "at": "2026-10-28T05:15:36.830Z",
+      "msg": "Vote 20/30 — demo-judge-b: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.949Z",
+      "msg": "Vote 21/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.950Z",
+      "msg": "Vote 22/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.950Z",
+      "msg": "Vote 23/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:36.951Z",
+      "msg": "Vote 24/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:37.070Z",
+      "msg": "Vote 25/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:37.071Z",
+      "msg": "Vote 26/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:37.072Z",
+      "msg": "Vote 27/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:37.073Z",
+      "msg": "Vote 28/30 — demo-judge-c: yes"
+    },
+    {
+      "at": "2026-10-28T05:15:37.193Z",
+      "msg": "Vote 29/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:37.193Z",
+      "msg": "Vote 30/30 — demo-judge-c: no"
+    },
+    {
+      "at": "2026-10-28T05:15:37.194Z",
+      "msg": "Judges voted 3 of 30 in favour (ECP 0.1)"
+    },
+    {
+      "at": "2026-10-28T05:15:37.596Z",
+      "msg": "Classified as borderline (predictability 0.107, ECP 0.1, divergence -0.007)"
+    }
+  ],
+  "updatedAt": "2026-10-28T05:15:37.596Z",
+  "mode": "judge",
+  "judge": {
+    "models": [
+      "demo-judge-a",
+      "demo-judge-b",
+      "demo-judge-c"
+    ],
+    "repeats": 10,
+    "variant": "unguided",
+    "prompt": {
+      "system": "You are asked whether two researchers should collaborate. Read both profiles and the opportunity, decide, and answer honestly. There is no right rate of yes or no.",
+      "user": "RESEARCHER A\nAiko Tanaka — Senior Lecturer in Organization Studies, School of Management, UK university (synthetic composite)\nField: Organization studies / sociology of work\nMethods: ethnography and participant observation; longitudinal qualitative case studies; grounded theory\nCurrent interests: how professionals make sense of AI in their daily work; occupational identity and expertise under automation; invisible work and articulation work in sociotechnical systems\nCollaboration style: Slow, deep engagement with field sites; protective of interpretive rigour; joins teams that treat qualitative work as theory-building, not decoration.\nRecent reflections:\n  - Field notes keep surfacing the same pattern: professionals quietly repair AI outputs and hide the effort — who studies where that invisible work goes?\n  - Sceptical of purely computational accounts of work; open to collaborations that let ethnography talk back to the models.\n\nRESEARCHER B\nPriya Raman — Associate Professor of Computational Social Science, Department of Computational Social Science, Mid-sized US research university (synthetic composite)\nField: Computational social science\nMethods: large-scale network analysis; agent-based modelling and simulation; text-as-data / NLP pipelines; quantitative field studies\nCurrent interests: science of science and research team formation; collaboration networks and knowledge recombination; LLM agents as models of social behaviour; measurement validity in computational methods\nCollaboration style: Brings data pipelines and formal models; insists on measurement validity checks before trusting any computational construct; happiest as the methods anchor on a team.\nRecent reflections:\n  - Wondering whether LLM-agent simulations can be validated as models of real social processes, not just plausible text generators.\n  - Looking for partners with access to real collaboration-network data to ground her simulations.\n\nTHE OPPORTUNITY\n\"Org Science special issue: AI-Assisted Frontiers in Organizational Science\"\nCall for prototypes — Organization Science special issue 'AI-Assisted Frontiers in Organizational Science' (editors: Gartenberg, Hasan, Pierce, Bail, Dai, Hauser, Rahman, Zhang). Core question: what kinds of knowledge can we create when the tools of inquiry themselves change? Wanted: contributions that reimagine what social science research looks like in an AI-enabled world — wild ideas and radical innovation, not incremental improvement. Contribution types include: AI-enabled research loops under human direction (when do they produce valid science vs 'Potemkin villages of slop'?); reusable research infrastructure (custom models, multi-agent workflows, simulation environments other scholars can use); new forms of measurement (constructs in text, audio, or video previously impossible to observe at scale); AI-enabled qualitative and theory-building work; synthetic social systems; new approaches to established research designs (improving what can be credibly inferred); critical or boundary-setting work (identifying where AI systems drift, obscure judgment, or undermine validity). Explicitly NOT wanted: conventional papers with AI-related content, typical applications, or AI slop with minimal author engagement. Stage 1 submission: short proposal (1,500-2,000 words) stating the core intended scientific contribution, what has been done, key risks, and how organizational and social science would change if it succeeds.\n\nShould Aiko Tanaka and Priya Raman collaborate on this opportunity? Answer as JSON only:\n{ \"vote\": 0 or 1, \"reason\": \"one plain sentence a colleague would understand\" }"
+    }
+  },
+  "judgments": [
+    {
+      "provider": "demo",
+      "model": "demo-judge-a",
+      "votes": [
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.339Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.340Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.341Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.341Z"
+        },
+        {
+          "vote": 1,
+          "reason": "Both work on computational and models from different methods, so each has something the other lacks.",
+          "at": "2026-10-28T05:15:36.462Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.463Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.464Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.464Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.584Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.585Z"
+        }
+      ]
+    },
+    {
+      "provider": "demo",
+      "model": "demo-judge-b",
+      "votes": [
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.586Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.586Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.705Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.706Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.707Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.707Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.827Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.828Z"
+        },
+        {
+          "vote": 1,
+          "reason": "Both work on computational and models from different methods, so each has something the other lacks.",
+          "at": "2026-10-28T05:15:36.829Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.830Z"
+        }
+      ]
+    },
+    {
+      "provider": "demo",
+      "model": "demo-judge-c",
+      "votes": [
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.949Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.950Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.950Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:36.951Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:37.070Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:37.071Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:37.072Z"
+        },
+        {
+          "vote": 1,
+          "reason": "Both work on computational and models from different methods, so each has something the other lacks.",
+          "at": "2026-10-28T05:15:37.073Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:37.193Z"
+        },
+        {
+          "vote": 0,
+          "reason": "Organization studies / sociology of work and Computational social science share too little for a joint response to be stronger than either alone.",
+          "at": "2026-10-28T05:15:37.193Z"
+        }
+      ]
+    }
+  ]
+}

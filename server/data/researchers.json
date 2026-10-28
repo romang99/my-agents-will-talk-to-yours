@@ -1,0 +1,360 @@
+{
+  "_meta": {
+    "description": "Public demonstration pool: ten independently fictional composite personas and a fictional collaboration graph. These fixtures do not represent the project authors or any other real person.",
+    "source": "Synthetic demonstration fixtures, October 2026",
+    "seniorityScale": "1 = lecturer, 2 = senior lecturer, 3 = associate professor, 4 = professor / chair"
+  },
+  "researchers": [
+    {
+      "id": "synthetic-mira-chen",
+      "name": "Mira Chen",
+      "synthetic": true,
+      "verified": true,
+      "title": "Senior Lecturer in Community Technology (fictional)",
+      "institution": "Queensland University of Technology (fictional appointment)",
+      "unit": "Community Systems Lab / Open Learning Centre (fictional)",
+      "country": "Australia",
+      "seniority": 2,
+      "field": "Participatory computing and community knowledge networks",
+      "methods": [
+        "participatory design workshops",
+        "computational network modelling",
+        "qualitative interviews"
+      ],
+      "methodFamilies": [
+        "design",
+        "computational",
+        "qualitative"
+      ],
+      "interests": [
+        "community collaboration networks and project team formation",
+        "validation of digital collaboration tools",
+        "participatory design of public-service platforms"
+      ],
+      "collaborationStyle": "A fictional community-technology researcher who pairs field workshops with small computational models and shares evaluation tasks across disciplines.",
+      "reflections": [
+        "A fictional mapping pilot needs to connect volunteer teams with complementary skills.",
+        "Looking for computational partners to evaluate whether collaboration networks can support community project teams."
+      ]
+    },
+    {
+      "id": "synthetic-jonas-adler",
+      "name": "Jonas Adler",
+      "synthetic": true,
+      "verified": true,
+      "title": "Senior Lecturer in Informal Learning (fictional)",
+      "institution": "Queensland University of Technology (fictional appointment)",
+      "unit": "Open Learning Centre (fictional)",
+      "country": "Australia",
+      "seniority": 2,
+      "field": "Pedagogy and informal education",
+      "methods": [
+        "participatory classroom observation",
+        "mixed-methods programme evaluation",
+        "conceptual learning-framework development"
+      ],
+      "methodFamilies": [
+        "qualitative",
+        "mixed",
+        "conceptual"
+      ],
+      "interests": [
+        "peer learning across community project teams",
+        "accessible educational platforms",
+        "evaluation of collaborative learning activities"
+      ],
+      "collaborationStyle": "A fictional education researcher who develops small learning activities with local facilitators and combines observations with participant feedback.",
+      "reflections": [
+        "A fictional museum workshop programme needs a way to evaluate learning across mixed-experience teams.",
+        "Interested in testing how collaborative learning tools affect participation in community programmes."
+      ]
+    },
+    {
+      "id": "synthetic-priya-raman",
+      "name": "Priya Raman",
+      "synthetic": true,
+      "verified": true,
+      "title": "Associate Professor of Computational Social Science",
+      "institution": "Mid-sized US research university (synthetic composite)",
+      "unit": "Department of Computational Social Science",
+      "country": "United States",
+      "seniority": 3,
+      "field": "Computational social science",
+      "methods": [
+        "large-scale network analysis",
+        "agent-based modelling and simulation",
+        "text-as-data / NLP pipelines",
+        "quantitative field studies"
+      ],
+      "methodFamilies": [
+        "computational",
+        "quantitative"
+      ],
+      "interests": [
+        "science of science and research team formation",
+        "collaboration networks and knowledge recombination",
+        "LLM agents as models of social behaviour",
+        "measurement validity in computational methods"
+      ],
+      "collaborationStyle": "Brings data pipelines and formal models; insists on measurement validity checks before trusting any computational construct; happiest as the methods anchor on a team.",
+      "reflections": [
+        "Wondering whether LLM-agent simulations can be validated as models of real social processes, not just plausible text generators.",
+        "Looking for partners with access to real collaboration-network data to ground her simulations."
+      ]
+    },
+    {
+      "id": "synthetic-aiko-tanaka",
+      "name": "Aiko Tanaka",
+      "synthetic": true,
+      "verified": true,
+      "title": "Senior Lecturer in Organization Studies",
+      "institution": "UK university (synthetic composite)",
+      "unit": "School of Management",
+      "country": "United Kingdom",
+      "seniority": 2,
+      "field": "Organization studies / sociology of work",
+      "methods": [
+        "ethnography and participant observation",
+        "longitudinal qualitative case studies",
+        "grounded theory"
+      ],
+      "methodFamilies": [
+        "qualitative"
+      ],
+      "interests": [
+        "how professionals make sense of AI in their daily work",
+        "occupational identity and expertise under automation",
+        "invisible work and articulation work in sociotechnical systems"
+      ],
+      "collaborationStyle": "Slow, deep engagement with field sites; protective of interpretive rigour; joins teams that treat qualitative work as theory-building, not decoration.",
+      "reflections": [
+        "Field notes keep surfacing the same pattern: professionals quietly repair AI outputs and hide the effort — who studies where that invisible work goes?",
+        "Sceptical of purely computational accounts of work; open to collaborations that let ethnography talk back to the models."
+      ]
+    },
+    {
+      "id": "synthetic-tomas-herrera",
+      "name": "Tomás Herrera",
+      "synthetic": true,
+      "verified": true,
+      "title": "Professor of Organizational Economics",
+      "institution": "European business school (synthetic composite)",
+      "unit": "Department of Strategy",
+      "country": "Spain",
+      "seniority": 4,
+      "field": "Organizational economics / strategy",
+      "methods": [
+        "causal identification (natural experiments, diff-in-diff, IV)",
+        "randomised field experiments",
+        "archival panel data"
+      ],
+      "methodFamilies": [
+        "quantitative",
+        "experimental"
+      ],
+      "interests": [
+        "incentives and organizational design",
+        "productivity effects of AI adoption in firms",
+        "internal labour markets and task allocation"
+      ],
+      "collaborationStyle": "Sceptical by default; wants an identification strategy before he wants a research question; declines projects where credible inference is out of reach. Values small, senior teams.",
+      "reflections": [
+        "AI adoption papers keep measuring productivity; nobody has a clean instrument for *which tasks* get reallocated to machines.",
+        "Would run a field experiment on team formation if anyone could randomise it credibly."
+      ]
+    },
+    {
+      "id": "synthetic-lena-fischer",
+      "name": "Lena Fischer",
+      "synthetic": true,
+      "verified": true,
+      "title": "Professor of Marine Geochemistry",
+      "institution": "Scandinavian research institute (synthetic composite)",
+      "unit": "Department of Ocean Sciences",
+      "country": "Norway",
+      "seniority": 4,
+      "field": "Earth sciences / marine geochemistry",
+      "methods": [
+        "ocean sediment sampling and isotope analysis",
+        "geochemical modelling",
+        "long-duration field campaigns"
+      ],
+      "methodFamilies": [
+        "field-science",
+        "quantitative"
+      ],
+      "interests": [
+        "paleoclimate reconstruction from sediment cores",
+        "ocean carbon cycling",
+        "deep-sea instrumentation"
+      ],
+      "collaborationStyle": "Collaborates within large natural-science consortia; no background in social or organizational research. Included in the pool as a deliberate poor-fit case: a well-functioning system should recognise when no credible joint project exists.",
+      "reflections": [
+        "Six-month cruise schedule leaves little room for side projects; only joins collaborations with a clear data or instrumentation angle."
+      ]
+    },
+    {
+      "id": "synthetic-callum-reid",
+      "name": "Callum Reid",
+      "synthetic": true,
+      "verified": true,
+      "title": "Senior Research Fellow in Human-Robot Interaction",
+      "institution": "Queensland University of Technology",
+      "unit": "School of Electrical Engineering & Robotics",
+      "country": "Australia",
+      "seniority": 2,
+      "field": "Human-robot interaction / field robotics",
+      "methods": [
+        "prototype deployment studies",
+        "controlled lab experiments",
+        "sensor and interaction-log analysis"
+      ],
+      "methodFamilies": [
+        "design",
+        "experimental",
+        "quantitative"
+      ],
+      "interests": [
+        "robots and embodied AI in everyday public spaces",
+        "trust calibration between humans and autonomous systems",
+        "long-term field deployments of service robots"
+      ],
+      "collaborationStyle": "Deploys real systems with real users early; needs partners who can handle messy field data and organisational access.",
+      "reflections": [
+        "Latest deployment showed people trust the robot most when it visibly hesitates — needs a theory partner to make sense of that.",
+        "Tired of HRI papers that never leave the lab."
+      ]
+    },
+    {
+      "id": "synthetic-sofia-marchetti",
+      "name": "Sofia Marchetti",
+      "synthetic": true,
+      "verified": true,
+      "title": "Professor of Health Services Research",
+      "institution": "Italian university medical school (synthetic composite)",
+      "unit": "Department of Public Health",
+      "country": "Italy",
+      "seniority": 4,
+      "field": "Health services research",
+      "methods": [
+        "clinical registry and administrative data analysis",
+        "implementation science frameworks",
+        "stepped-wedge trials"
+      ],
+      "methodFamilies": [
+        "quantitative",
+        "experimental",
+        "mixed"
+      ],
+      "interests": [
+        "safe adoption of AI decision support in hospitals",
+        "clinician workload and burnout",
+        "implementation of digital health pathways"
+      ],
+      "collaborationStyle": "Works through hospital partnerships; needs ethics-ready designs and co-investigators who respect clinical constraints.",
+      "reflections": [
+        "Hospitals keep buying AI triage tools with no implementation plan; the failure mode is organisational, not algorithmic.",
+        "Looking for organisation scholars who can theorise adoption failure beyond 'resistance to change'."
+      ]
+    },
+    {
+      "id": "synthetic-david-okonkwo",
+      "name": "David Okonkwo",
+      "synthetic": true,
+      "verified": true,
+      "title": "Associate Professor of Law and Technology",
+      "institution": "Queensland University of Technology",
+      "unit": "Faculty of Business and Law",
+      "country": "Australia",
+      "seniority": 3,
+      "field": "Law / technology regulation",
+      "methods": [
+        "doctrinal legal analysis",
+        "comparative regulatory studies",
+        "expert interviews"
+      ],
+      "methodFamilies": [
+        "qualitative",
+        "conceptual"
+      ],
+      "interests": [
+        "liability and accountability for autonomous AI agents",
+        "regulation of algorithmic decision-making",
+        "data governance and cross-border data flows"
+      ],
+      "collaborationStyle": "Translates technical detail into regulatory argument; prefers projects with a live policy audience.",
+      "reflections": [
+        "Agentic AI is about to break the principal-agent assumptions in most liability law; needs technical collaborators who can specify what agents actually do.",
+        "Drafting a submission on AI agent accountability for a parliamentary inquiry."
+      ]
+    },
+    {
+      "id": "synthetic-ingrid-solberg",
+      "name": "Ingrid Solberg",
+      "synthetic": true,
+      "verified": true,
+      "title": "Professor of Science and Technology Studies",
+      "institution": "Scandinavian research institute (synthetic composite)",
+      "unit": "Centre for Science Studies",
+      "country": "Norway",
+      "seniority": 4,
+      "field": "Science and technology studies",
+      "methods": [
+        "laboratory ethnography",
+        "document and infrastructure analysis",
+        "historical case studies"
+      ],
+      "methodFamilies": [
+        "qualitative",
+        "conceptual"
+      ],
+      "interests": [
+        "how scientific instruments shape what counts as knowledge",
+        "credit, authorship and the moral economy of science",
+        "automation of scientific labour"
+      ],
+      "collaborationStyle": "Joins projects as the reflexive conscience: asks what the tool does to the practice it studies. Publishes slowly, cited long.",
+      "reflections": [
+        "If AI agents start proposing collaborations, the interesting question is what happens to scientific credit and authorship.",
+        "Wants a live case to study — ideally a team building such a system and willing to be observed."
+      ]
+    }
+  ],
+  "collaborations": [
+    {
+      "source": "synthetic-mira-chen",
+      "target": "synthetic-jonas-adler",
+      "context": "Fictional collaboration in the synthetic demonstration graph"
+    },
+    {
+      "source": "synthetic-mira-chen",
+      "target": "synthetic-callum-reid",
+      "context": "Fictional collaboration in the synthetic demonstration graph"
+    },
+    {
+      "source": "synthetic-jonas-adler",
+      "target": "synthetic-david-okonkwo",
+      "context": "Fictional collaboration in the synthetic demonstration graph"
+    },
+    {
+      "source": "synthetic-priya-raman",
+      "target": "synthetic-tomas-herrera",
+      "context": "AI adoption and productivity panel study (2024)"
+    },
+    {
+      "source": "synthetic-priya-raman",
+      "target": "synthetic-aiko-tanaka",
+      "context": "Mixed-methods study of algorithmic management (2023)"
+    },
+    {
+      "source": "synthetic-sofia-marchetti",
+      "target": "synthetic-david-okonkwo",
+      "context": "Health data governance project (2023)"
+    },
+    {
+      "source": "synthetic-ingrid-solberg",
+      "target": "synthetic-aiko-tanaka",
+      "context": "Automation of scientific labour workshop series (2024)"
+    }
+  ]
+}

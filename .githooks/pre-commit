@@ -1,0 +1,3 @@
+#!/bin/sh
+# Check the staged content, even when different working files are present.
+exec node tools/check-publishing.mjs --staged
