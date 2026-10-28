@@ -4,7 +4,17 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const normalise = (s) => String(s).normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]/g, '');
-const privatePath = /^(?:data\/(?:archive\/|runs\/(?!\.gitkeep$)|(?:custom-researchers|profile-overrides|triggers)\.json$)|transcripts\/(?!README\.md$))/;
+// Match .gitignore's data allowlist even when someone uses git add --force.
+const sharedData = new Set([
+  'data/README.md', 'data/runs/.gitkeep',
+  'server/data/researchers.json', 'server/data/triggers-seed.json',
+  'transcripts/README.md',
+]);
+function privatePath(file) {
+  if (file.startsWith('private/')) return true;
+  if (!/^(?:data|server\/data|transcripts)\//.test(file)) return false;
+  return !sharedData.has(file) && !/^data\/examples\/[^/]+\.json$/.test(file);
+}
 const secretPath = /(?:^|\/)(?:\.env(?:$|\.(?!example$))|id_rsa$|id_ed25519$|[^/]+\.(?:pem|p12|key)$)/i;
 const secret = /(?:sk-ant-[A-Za-z0-9_-]{20,}|sk-(?:proj-)?[A-Za-z0-9_-]{30,}|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)/;
 
@@ -59,7 +69,7 @@ export function auditSnapshot(files) {
   }
 
   for (const [file, content] of files) {
-    if (privatePath.test(file)) fail(file, 'private runtime state or raw transcript is tracked');
+    if (privatePath(file)) fail(file, 'private runtime state, unapproved data file or raw transcript is tracked');
     if (secretPath.test(file) || secret.test(content)) fail(file, 'credential filename or token-like content');
     if (!file.endsWith('.json')) continue;
     try {

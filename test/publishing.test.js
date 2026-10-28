@@ -45,12 +45,28 @@ test('live runs and non-synthetic persona snapshots cannot pass as demo examples
   assert.ok(auditSnapshot(files).some(error => error.includes('synthetic persona snapshots')));
 });
 
-test('private runtime paths and copied raw transcripts are rejected', () => {
+test('private runtime paths, exports and seed backups are rejected even if force-added', () => {
   const files = safeFiles();
-  files.set('data/profile-overrides.json', '{}');
-  files.set('data/runs/run.json', '{}');
-  files.set('transcripts/session.txt', 'test fixture');
-  assert.equal(auditSnapshot(files).filter(error => error.includes('private runtime')).length, 3);
+  const privateFiles = [
+    'data/profile-overrides.json', 'data/runs/run.json', 'data/archive/run.json',
+    'data/new-export.csv', 'data/examples/transcript.txt',
+    'data/examples/local-copy/run.json', 'server/data/researchers-backup.json',
+    'transcripts/session.txt', 'private/import.json',
+  ];
+  for (const file of privateFiles) files.set(file, '{}');
+  const errors = auditSnapshot(files);
+  for (const file of privateFiles) {
+    assert.ok(errors.some(error => error.startsWith(`${file}: private runtime`)), file);
+  }
+});
+
+test('shared data documentation, seed inputs and the empty run directory remain allowed', () => {
+  const files = safeFiles();
+  for (const file of [
+    'data/README.md', 'data/runs/.gitkeep',
+    'server/data/triggers-seed.json', 'transcripts/README.md',
+  ]) files.set(file, load(file));
+  assert.deepEqual(auditSnapshot(files), []);
 });
 
 test('credential files and token-like text are rejected without printing values', () => {

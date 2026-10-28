@@ -1,16 +1,29 @@
 node_modules/
 .DS_Store
 
-# Runtime state. Live runs and profiles of real people are never committed (docs/DATA_ETHICS.md §7).
-data/runs/*
-!data/runs/.gitkeep
-data/archive/
-data/custom-researchers.json
-data/profile-overrides.json
-data/triggers.json
+# Runtime data is private by default, including new exports and backups.
+# Only the documentation, reviewed synthetic demos and empty run directory are shared.
+/data/*
+!/data/README.md
+!/data/examples/
+/data/examples/*
+!/data/examples/*.json
+!/data/runs/
+/data/runs/*
+!/data/runs/.gitkeep
+
+# Only the two maintained seed files belong in Git; local copies stay private.
+/server/data/*
+!/server/data/researchers.json
+!/server/data/triggers-seed.json
+
+# Raw transcripts and any local imports must stay outside version control.
+/transcripts/*
+!/transcripts/README.md
+/private/
 
 # Build output; the Markdown is the source of truth.
-docs/pdf/
+/docs/pdf/
 
 # Credentials stay outside the published project.
 .env
@@ -18,3 +31,4 @@ docs/pdf/
 !.env.example
 *.pem
 *.p12
+*.key

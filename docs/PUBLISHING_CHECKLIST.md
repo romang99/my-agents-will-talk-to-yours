@@ -29,10 +29,15 @@ it does not include the underlying personal profiles or live run artifacts.
    credentials, and author identities accidentally reused as personas.
 3. Review `git diff --cached` manually. Flags and automated pattern checks cannot prove
    that an invented-looking profile is unrelated to a real person.
-4. Run `git ls-files data/ transcripts/`. Only `data/README.md`, `data/runs/.gitkeep`,
-   the synthetic examples and `transcripts/README.md` should be listed.
+4. Run `git ls-files data/ server/data/ transcripts/ private/`. Only `data/README.md`,
+   `data/runs/.gitkeep`, direct synthetic `data/examples/*.json`, the two seed files
+   (`researchers.json`, `triggers-seed.json`) and `transcripts/README.md` should be listed.
 5. Confirm `git check-ignore data/profile-overrides.json data/runs/check.json
-   data/archive/check.json` reports all three paths. Real runtime state stays untracked.
+   data/archive/check.json data/new-export.csv server/data/researchers-backup.json
+   transcripts/session.txt private/import.json` reports all seven paths. The data folders
+   use an allowlist, so new local exports and backups remain untracked by default.
+   The commit guard rejects excluded paths even if force-added; allowed JSON is also
+   checked for synthetic-only profiles and demo-only runs.
 6. Retain the MIT `LICENSE` and copyright attribution. Keep STATUS accurate; do not present
    offline examples as live evidence or rewrite historical findings as synthetic results.
 7. Optional: render documentation with `npm run docs`. PDFs are ignored build output.

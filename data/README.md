@@ -13,6 +13,17 @@ real people are never committed (`docs/DATA_ETHICS.md` §7, `docs/PUBLISHING_CHE
 | `profile-overrides.json` | human corrections to profiles, as field deltas | **ignored** |
 | `triggers.json` | opportunity triggers; created from `server/data/triggers-seed.json` on first start | **ignored** |
 
+All other files under `data/` are ignored by default, including newly named exports,
+backups and live runs. Under `server/data/`, only `researchers.json` (fictional personas)
+and `triggers-seed.json` are shared. `transcripts/` shares only its README; `private/`
+is reserved for untracked local imports. These exclusions do not delete local files.
+
+The commit and push guards reject these private paths even if they are force-added.
+They also check the allowed JSON files: profiles must be explicitly synthetic and demo
+examples must use the offline demo provider and synthetic seed personas. Review the
+origin of every fixture; a synthetic flag alone does not make a real profile fictional.
+Enable the guards in each clone with `git config core.hooksPath .githooks`.
+
 To see the examples in the interface:
 
 ```bash
