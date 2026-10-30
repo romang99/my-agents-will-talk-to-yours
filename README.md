@@ -1,12 +1,16 @@
-# ResearcherConnect
+# WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER
 
-**Nice to meet you — could my LLM talk to yours?**
+**ResearcherConnect v0.3 — technical prototype**
 
-A visual agentic system for discovering **latent research collaboration opportunities**. Two LLM agents — each representing a researcher's "mind" (expertise, methods, current questions, private reflections) — hold a conversation on the researchers' behalf, try to construct a genuinely valuable joint research project, and honestly report when none exists. Every discovered opportunity is then tested against the four classical tie-formation mechanisms (Dahlander & McFarland, 2013): if established network theory would *not* have predicted the pair, the opportunity is classified **latent** — the paper's core empirical claim.
+ResearcherConnect assesses potential research collaborations between **pairs of researchers** using researcher profiles, research opportunities and model judgments. A deterministic structural heuristic, informed by the four tie-formation mechanisms of Dahlander & McFarland (2013), is compared with the model's expected collaboration potential (ECP). The implemented classification identifies candidate **latent collaboration opportunities** when a low structural score is combined with a positive model assessment.
 
-Since September 2026 the conversation is one of two ways to produce that judgment. The other, **judge mode**, asks a single model "should these two collaborate on this opportunity — 0 or 1?" ten times on each of several models and takes the share in favour. The conversation attempt is kept as the paper's documented failure path; the judge is the study instrument. Both are in the app, chosen per run.
+Two assessment modes are implemented. **Conversation mode** uses an exchange between agents representing the researchers, followed by a connection brief. **Judge mode** asks whether the two researchers should collaborate on the opportunity, repeating a binary judgment across selected models; ECP is the share of valid votes in favour. Both modes support human feedback. Initial development observations and the limits of the existing evaluation are documented in the technical appendix.
 
-Built as the prototype for an *Organization Science* Call for Prototypes submission by **Nadine Ostern** and **Marek Kowalkiewicz** (QUT): *"Nice to Meet You — Could My LLM Talk to Yours?" Identifying Latent Scientific Collaboration Opportunities through LLM-Mediated Conversations*. It is the visual successor to SyncMinds v0.1 (Python/Streamlit, `OrgSci/syncminds/` — a sibling folder on Marek's machine, not part of this repository) — same research programme, reimagined as an interactive "research observatory".
+The **proposed agent arena** is the next development stage. It will investigate alternative multi-agent configurations for exploring scientific connections and developing and evaluating possible research directions. Arena mechanisms and team formation are future work; the current release provides the pair-assessment foundation.
+
+Built as the prototype for an *Organization Science* Call for Prototypes submission by **Nadine Ostern** and **Marek Kowalkiewicz** (QUT). It is the visual successor to SyncMinds v0.1 (Python/Streamlit, `OrgSci/syncminds/` — a sibling folder on Marek's machine, not part of this repository).
+
+**Technical appendix:** [Markdown](docs/TECHNICAL_APPENDIX.md) · [Word](docs/20261029_Technical_Appendix_OrgScience.docx) · [PDF](docs/Technical_Appendix_Welcome_to_the_Jungle.pdf).
 
 **New to the project?** Read [docs/ONBOARDING.md](docs/ONBOARDING.md) first; it carries the context the code cannot.
 
@@ -35,7 +39,7 @@ A **Guide** button in the header explains the workflow, the two numbers (predict
 
 *Written for collaborators — the whole thing runs on your own machine; nothing is hosted, and nothing leaves your computer except the LLM calls you choose to make.*
 
-**You need:** [Node.js](https://nodejs.org) 20 or newer (`node --version` to check), and a copy of this folder from Marek (or a clone, once the repo is on GitHub). There is no install step — no `npm install`, no build.
+**You need:** [Node.js](https://nodejs.org) 20 or newer (`node --version` to check), and a clone of this repository. There is no install step — no `npm install`, no build.
 
 **Start in demo mode first** (free, offline, runs in seconds — the LLM outputs are simulated but the whole app works):
 
@@ -107,7 +111,7 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the full map and design rationale.
 npm run docs
 ```
 
-renders them all to `docs/pdf/` (needs pandoc and Chrome; the Markdown is the source of truth).
+renders the Markdown documentation to `docs/pdf/` (needs pandoc and Chrome).
 
 ## Licence
 
