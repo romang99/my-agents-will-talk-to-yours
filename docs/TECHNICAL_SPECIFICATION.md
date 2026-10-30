@@ -7,6 +7,8 @@ date: "July 2026"
 
 # 1. Purpose and scope
 
+This specification describes the implemented ResearcherConnect v0.3 pair-assessment instrument. The current submission, *WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER*, proposes a further agent-arena stage; those mechanisms are not present in this release. The [technical appendix](TECHNICAL_APPENDIX.md) separates implementation, development observations and planned evaluation.
+
 ResearcherConnect operationalises a five-step research design for identifying **latent scientific collaboration opportunities** — pairings not explained by established mechanisms of tie formation. This document specifies how it works: the measures, the agentic pipeline, the data model, the interfaces, and the invariants that keep its behaviour traceable.
 
 It is a research instrument, not a product. Every design choice below favours *auditability* over convenience: a reviewer must be able to answer "why did the system say that?" by reading files, not by re-running code.
@@ -109,7 +111,7 @@ Per run, the human records *agree* / *worth discussing* / *disagree* against the
 
 **Conversation protocol.** Six turns by default (`TURNS` env var), alternating. Each turn is one call carrying the speaker's persona system prompt, the transcript so far, the trigger text, and phase guidance: *relevance* (is this opportunity even ours?), *assessment* (is the complementarity real and concrete?), *judgment* (would the researcher actually commit?). The final turn must give a plain connect / don't-connect recommendation.
 
-**Recognition, not invention.** Agents are instructed not to draft research questions or study designs. The deliverable is a judgment about whether two humans should meet; the creative work belongs to the humans afterwards. This was a deliberate design decision (working session, 24 July 2026) after early runs produced plausible but inauthentic research agendas.
+**Recognition, not invention in the current conversation mode.** Agents are instructed not to draft research questions or study designs. The deliverable is a judgment about whether two humans should meet; the creative work belongs to the humans afterwards. This was a deliberate design decision (working session, 24 July 2026) after early runs produced plausible but inauthentic research agendas.
 
 **Honest failure is designed in.** Persona rules state that a well-reasoned "no basis" is a successful outcome, and the synthesizer is instructed never to inflate a weak conversation. The seed pool contains a deliberate poor-fit researcher (a marine geochemist) to exercise this path; the test suite asserts that the pairing fails honestly.
 

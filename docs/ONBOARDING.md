@@ -11,13 +11,13 @@ date: "October 2026"
 
 # 1. What this is, in four paragraphs
 
+**Current submission:** *WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER*. This page explains the existing pair-assessment prototype. Its planned extension is an agent arena for exploring and evaluating scientific opportunities; see the [technical appendix](TECHNICAL_APPENDIX.md) and [submission framing](specs/2026-10-30-submission-framing.md).
+
 **The research question.** Can an LLM find research collaborations that established
 network theory would not predict, and that the humans involved then endorse? Dahlander &
 McFarland (2013) describe four mechanisms that explain why research ties form: shared
 organisational settings, similarity of status and values, cumulative advantage of the
-already well-connected, and shared collaborators. A pair those mechanisms *cannot* explain,
-but the system and the humans both rate highly, is a **latent collaboration opportunity**.
-That divergence is the paper's claim, and the whole prototype exists to make it measurable.
+already well-connected, and shared collaborators. The implementation labels a pair with a low structural score and positive model assessment as a candidate **latent collaboration opportunity**. Human endorsement is a separate outcome to be evaluated; the current classification does not itself establish scientific value.
 
 **The two numbers.** For every pair of researchers the system computes *structural
 predictability* (0–1, deterministic, from the four mechanisms) and *expected collaboration
@@ -34,11 +34,7 @@ and the opportunity and asked "should they collaborate, 0 or 1?", ten times each
 models; ECP is the share of votes in favour. Both modes are in the app. Conversation mode is
 kept as the documented failure path and a possible explainer; the paper tells that story.
 
-**Where it is headed.** Submission to the *Organization Science* Call for Prototypes is due
-end of 2026 (short paper, technical appendix, repository). The near-term path is: collect
-real data (real profiles, verified by their subjects; eventually a QUT Pure export), run the
-judge on every unconnected pair or a predictability-stratified sample, and count how many
-latent finds humans endorse. Feature work is not the bottleneck; data and decisions are.
+**Where it is headed.** The submission brings together the existing prototype, its technical appendix and a proposal for further development. The proposed arena will compare alternative multi-agent configurations and examine the scientific potential of the opportunities they produce. Verified participant profiles, sampling, human evaluation and suitable comparison conditions belong to the planned study. The current release remains a pair-assessment instrument, with the development observations and limitations documented separately from future work.
 
 # 2. Reading order, by role
 

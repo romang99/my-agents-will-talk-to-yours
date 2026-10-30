@@ -1,17 +1,19 @@
 ---
 title: "ResearcherConnect — Prototype Guide"
-subtitle: "Nice to meet you — could my LLM talk to yours?"
+subtitle: "WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER"
 author: "Nadine Ostern & Marek Kowalkiewicz · Queensland University of Technology"
 date: "July 2026"
 ---
 
 # What this prototype does
 
-ResearcherConnect looks for **latent collaboration opportunities**: pairings of researchers that established network theory would *not* predict, but where two LLM agents — each speaking from a researcher's own "mind file" — recognise genuine potential for a concrete opportunity.
+ResearcherConnect is the implemented pair-assessment prototype supporting the current submission. It compares a deterministic structural heuristic with model assessments of potential research collaborations. Conversation mode uses an exchange between agents representing the two researchers; judge mode collects repeated binary judgments. Both modes support human feedback.
 
-It is deliberately **not** a recommender that ranks people by similarity. Similar researchers are easy to find and often have nothing to gain from each other. The system instead puts two agents in conversation about a real opportunity (a call for papers, a project, an idea) and asks a narrower, more honest question: *should these two humans talk?* A well-argued "no" is a successful outcome, and the tool records it as such.
+The proposed agent arena will extend this foundation to alternative multi-agent arrangements for exploring and evaluating scientific opportunities. Arena mechanisms, team formation and the generation and evaluation of research sketches remain planned development. The [technical appendix](TECHNICAL_APPENDIX.md) describes the current implementation and the planned evaluation.
 
-Every claim the system makes is traceable. Each run is a single JSON file containing the trigger, every conversation turn, the scores, the model that produced them, and your decision.
+In the current conversation mode, agents assess whether the two humans should talk and explain what each would bring. They are instructed not to draft research questions or study designs. A well-argued negative recommendation is a valid outcome.
+
+Each run stores its inputs, model outputs, scores and human feedback in a JSON file. Judge runs also save the full judge prompt; conversation prompt reconstruction requires the matching code revision.
 
 # Before you start
 
@@ -44,7 +46,7 @@ The interface follows the paper's research design. The rail across the top light
 |---|---|---|
 | 1 · Baseline | The four classical tie-formation mechanisms are computed for the pair, deterministically | Select any pair → *Pair baseline* panel |
 | 2 · Representation | Each researcher's profile is composed into their agent's instructions | Click a star → *Edit representation* |
-| 3 · Conversation | The two agents assess the opportunity together | Conversation Theater (live), or any run's *Conversation* tab |
+| 3 · Conversation or judgment | Persona agents assess the pair together, or judge models cast repeated votes | Conversation Theater or judge tally; stored transcript or vote reasons |
 | 4 · Validation | You agree or disagree with the machine's recommendation | The buttons at the foot of every connection brief |
 | 5 · Comparison | Predictability and ECP are compared; the pair is classified | Findings tab |
 
@@ -70,7 +72,7 @@ Selecting a pair opens the *Pair baseline* panel, which shows exactly how its pr
 
 # The two numbers
 
-**Structural predictability (0–1)** — how strongly the four classical mechanisms (Dahlander & McFarland 2013) predict a tie between these two: shared organisational settings, similar standing and methods, how well-connected each already is, and whether they share collaborators. Computed in code, fully explainable, never touched by an LLM.
+**Structural predictability (0–1)** — a deterministic heuristic combining proxies for the four tie-formation mechanisms (Dahlander & McFarland 2013): shared organisational settings, similar standing and methods, existing connections and shared collaborators. Its weights are stipulated, and it is not a calibrated probability. The calculation is exposed in the interface and uses no LLM.
 
 **ECP — expected collaboration potential (0–1)** — the system's own judgment. In conversation mode it is computed in code from the agents' relevance, complementarity and feasibility scores; in judge mode it is the share of votes in favour. Zero when no case was found.
 
@@ -78,12 +80,12 @@ The finding is in the **divergence**:
 
 | Classification | Meaning |
 |---|---|
-| **Latent** | predictability < 0.25 **and** ECP ≥ 0.5 — structure predicts nothing, the system sees real potential |
-| **Predicted** | predictability ≥ 0.5 — structure already explains this pair |
+| **Latent** | structural score < 0.25 **and** ECP ≥ 0.5 — a candidate opportunity combining a low structural score with a positive model assessment |
+| **Predicted** | ECP > 0 and structural score ≥ 0.5 |
 | **Borderline** | neither clearly applies |
-| **No viable basis** | ECP = 0 — the agents honestly found nothing |
+| **No viable basis** | ECP = 0; this rule takes priority over the structural score |
 
-In the Findings chart, latent opportunities appear in the shaded upper-left. That region is the paper's claim.
+In the Findings chart, candidate latent opportunities appear in the shaded upper-left. Their scientific value and human endorsement require the planned evaluation.
 
 # Managing the researcher pool
 

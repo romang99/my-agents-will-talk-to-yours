@@ -72,14 +72,18 @@ Three positions were settled on the planning call:
 None of the arena work exists in code. The appendix should describe it as the planned
 development, clearly separated from what was built.
 
+When reading this handover, distinguish the implemented pair-assessment prototype from the planned arena described in the [current technical appendix](TECHNICAL_APPENDIX.md).
+
 # 4. Naming
 
-Working names from the call, for the proposal rather than the repository: "agent arena";
+**Current submission title (30 October 2026):** *WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER*.
+
+The following naming ideas are retained as historical notes from the planning call: "agent arena";
 something with the energy of *This is Sparta* or *Gladiator* for the title; a plain
 subtitle such as *Design Principles for Agent-Based Assessment of Research Collaborations*.
 Roman's thesis working title: *Transforming research tasks into tailored teams: a
 multi-agent architecture for competency- and preference-aware task assignment*. The
-repository name can stay ResearcherConnect until the paper's title is settled.
+implemented prototype retains the name ResearcherConnect.
 
 # 5. Practicalities for Roman
 

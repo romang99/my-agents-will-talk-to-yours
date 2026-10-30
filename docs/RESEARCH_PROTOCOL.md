@@ -12,6 +12,8 @@ date: "July 2026"
 
 # 1. Research question
 
+**Scope of this working protocol.** This document concerns evaluation of the initial pair-assessment instrument. The current submission, *WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER*, also proposes an agent-arena extension. Its planned research sketches and evaluation are outlined in the [technical appendix](TECHNICAL_APPENDIX.md); the arena is not implemented in v0.3.
+
 > How does LLM-mediated interaction construct latent scientific collaboration opportunities beyond established mechanisms of tie formation?
 
 A **latent collaboration opportunity** is a potentially valuable basis for joint research that (a) has not developed into a social tie and (b) is unlikely to become visible through established tie-formation mechanisms alone.

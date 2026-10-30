@@ -7,6 +7,8 @@ date: "October 2026"
 
 Terms are alphabetical. Where a term names something in the code, the file is given.
 
+**Agent arena** — planned development under the current submission, examining alternative multi-agent arrangements for exploring connections and evaluating possible research directions. Team formation and arena mechanisms are not implemented in v0.3. See [current submission framing](specs/2026-10-30-submission-framing.md) and [technical appendix](TECHNICAL_APPENDIX.md).
+
 **Alignment** — human–machine alignment, one of the two primary measures: agreements ÷
 (agreements + disagreements) over the machine's recommendations, counting "worth
 discussing" as neither. Agreeing with a *don't connect* counts as alignment too.
@@ -138,8 +140,7 @@ For the project itself: `docs/specs/`, `transcripts/`, git history, and the pred
 `complete({system, prompt, maxTokens, meta, model})` and `judgeModels`. Chosen per run.
 `server/llm/provider.js`.
 
-**Recognition, not invention** — the agents' mandate: judge whether two humans should meet
-and say what each brings; never draft research questions.
+**Recognition, not invention** — the mandate in the current conversation mode: judge whether two humans should meet and say what each brings; do not draft research questions. This describes the existing prompts, not a restriction on the planned generative arena.
 
 **Reflections** — the L2 layer: short, researcher-authored notes on current thinking. What
 makes a conversation specific. Also where collaborator names leak into judge prompts.

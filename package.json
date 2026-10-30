@@ -1,7 +1,7 @@
 {
   "name": "researcherconnect",
   "version": "0.3.0",
-  "description": "Nice to meet you \u2014 could my LLM talk to yours? A visual agentic system for discovering latent research collaboration opportunities. Successor to SyncMinds v0.1.",
+  "description": "WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER — ResearcherConnect v0.3, a pair-assessment prototype supporting research on scientific collaboration and future agent arenas.",
   "type": "module",
   "private": true,
   "scripts": {
