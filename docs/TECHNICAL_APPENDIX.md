@@ -2,8 +2,6 @@
 
 Technical appendix | Prototype ResearcherConnect v0.3 | Documentation revision 30 October 2026
 
-*Yellow highlights identify added or changed words relative to the previous docs/TECHNICAL\_APPENDIX.md draft at code revision 92ed62e0c3be. Unchanged wording is unmarked; deletions are not shown. New figures have highlighted captions.*
-
 **Repository** [ResearcherConnect on GitHub](https://github.com/romang99/my-agents-will-talk-to-yours)
 
 **Inspected code revision** 92ed62e0c3be76a225aee626be11ae9823b63cf7
