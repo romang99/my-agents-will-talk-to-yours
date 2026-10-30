@@ -5,10 +5,9 @@ author: "Nadine Ostern & Marek Kowalkiewicz · Queensland University of Technolo
 date: "July 2026"
 ---
 
-> **Status: working draft for discussion.** Sections marked **[DECIDE]** are open
-> questions for Nadine and Marek to settle before any data collection. Nothing here
-> is preregistered yet; the point of the document is to make the choices explicit
-> enough that they *can* be.
+> **Status: proposed evaluation framework.** This document concerns the initial
+> pair-assessment instrument. It is not a preregistration and does not report a
+> completed participant study.
 
 # 1. Research question
 
@@ -26,13 +25,13 @@ Early runs let agents invent research agendas freely; the results were fluent bu
 
 This does not weaken the latency claim. Tie-formation theory explains *how ties form*, not *how good a collaboration would be*. The baseline's blind spot is quality, and the trigger is what makes quality assessable. Collaboration quality is itself trigger-dependent: a roboticist and a chemist may be an excellent pairing for one call and a poor one for another.
 
-A residual subtlety worth stating in the paper: a call for papers is itself an organisational focus in Dahlander & McFarland's sense. The defensible framing is that the system manufactures focality that did not exist socially — neither researcher was attending to that opportunity together. **[DECIDE]** whether to make this a theoretical contribution ("agents as synthetic organisational foci") or a limitation.
+A call for papers can itself provide an organisational focus. Its role as a shared context must be considered when interpreting the opportunities produced by the system.
 
 # 3. Design
 
 Unit of analysis: the **researcher pair**. Teams are out of scope for the first study; a defensible extension is team potential as the product of pairwise ECPs (one weak member collapses the team), which is recorded here as future work.
 
-## 3.1 Conditions **[DECIDE]**
+## 3.1 Candidate study conditions
 
 Candidate manipulations, in rough order of value:
 
@@ -42,15 +41,15 @@ Candidate manipulations, in rough order of value:
 | **B. Representation depth** | L0 profile only vs L0 + recent reflections (+ L1 publication corpus) | whether richer mind files change conversation quality and ECP |
 | **C. Human intervention** | no intervention vs mid-conversation steering | the "strategically positioned breakpoints" idea |
 
-Within-pair designs are preferred (same pair under both levels), since the pair is its own control. Order effects are not a concern because the system has no memory across runs — but the *human* validating both does, so **[DECIDE]** whether validation is blind to condition.
+Within-pair comparisons use the same pair under both levels. Repeated exposure to suggestions and knowledge of the condition can affect human assessments, so order and information available to raters belong to the evaluation design.
 
 ## 3.2 Sampling of pairs
 
-Probe unconnected pairs in ascending predictability — the front of the queue is where classical theory predicts least, so a discovery is most diagnostic. **[DECIDE]** whether to sample the full unconnected set (feasible at n ≈ 12; 59 pairs) or the lowest-*k* stratum, and whether to include a stratified sample of higher-predictability pairs as a comparison group. Including them is methodologically stronger: without them there is no evidence that the system *discriminates* rather than simply endorsing everything.
+The interface orders unconnected pairs by ascending structural score. This supports exploratory inspection. Evaluation across structural proximity requires a sampling design that includes suitable comparison pairs; a sample restricted to low-score pairs supports claims about that subset.
 
-## 3.3 Preregistered parameters
+## 3.3 Current defaults and study provenance
 
-Fixed before data collection and reported verbatim:
+The following values are the current software defaults:
 
 | Parameter | Value | Where |
 |---|---|---|
@@ -62,9 +61,9 @@ Fixed before data collection and reported verbatim:
 
 Weights and thresholds are **stipulated, not fitted**. A robustness appendix should report how classifications shift under alternative thresholds — the run files contain both raw numbers, so this is a re-analysis, not a re-run.
 
-**Prompt wording is a preregistered parameter too**, and must be frozen before a condition opens. The persona, conversation, synthesizer and assessor prompts shape the 1–5 ratings that ECP is computed from, so runs made either side of a prompt edit are not comparable. **[DECIDE]** whether to record a prompt version (or hash) on each run, so provenance states which wording produced a score; nothing does this today.
+**Prompt wording is part of measurement provenance.** Judge runs store their full prompt. Conversation runs require the matching code revision because the full stage prompts and their versions are not stored with each run. A comparative study must document the configuration used for each condition.
 
-**ECP has measurement noise that must be quantified before it carries a claim.** Historical private development observed different ECP on identical inputs, so a single run cannot establish a stable estimate. Individual live-run values are retained only in the private research archive. Since a `latent` verdict turns on ECP crossing 0.5, the study needs a test–retest check: **[DECIDE]** how many repeat runs per pair, and whether the reported ECP is a single run or the median of *k*. Predictability is unaffected because it is deterministic.
+**ECP has measurement noise that must be quantified before it carries a claim.** Historical private development observed different ECP on identical inputs, so a single run cannot establish a stable estimate. Individual live-run values are retained only in the private research archive. Since a `latent` verdict turns on ECP crossing 0.5, repeatability must be assessed under the study configuration. The prototype retains each run's ECP. Predictability is unaffected because it is deterministic.
 
 # 4. Measures
 
@@ -76,20 +75,20 @@ Weights and thresholds are **stipulated, not fitted**. A robustness appendix sho
 
 **Manipulation check.** The deliberate poor-fit case (marine geochemistry against information systems) must yield `none`. If it does not, the sycophancy countermeasures have failed and results are not interpretable.
 
-# 5. Procedure
+# 5. Proposed procedure
 
 1. **Assemble the private study pool.** Use a separately governed private study copy and ignored runtime stores for verified participant profiles and data sources (Pure export when available; the AI scout in the interim). Do not replace the shared fictional seed or commit personal study data.
-2. **Verification (Step 2).** Each real researcher reviews and corrects their own representation and ticks *verified*. Unverified profiles are excluded from the primary analysis. **[DECIDE]** whether unverified profiles may appear as the *other* side of a pair.
+2. **Verification (Step 2).** Each real researcher reviews and corrects their own representation and ticks *verified*. Unverified profiles are excluded from the primary analysis.
 3. **Fix the trigger(s).**
 4. **Baseline.** Computed automatically; export the predictability of every pair before any conversation.
-5. **Probe** per the sampling plan. One run per pair per condition.
-6. **Validation (Step 4).** The focal researcher records agree / worth discussing / disagree, with an optional note. **[DECIDE]** whether both members of a pair validate independently — methodologically better, logistically harder.
+5. **Probe** under the recorded sampling plan and study configuration.
+6. **Validation (Step 4).** The interface records one agree / worth discussing / disagree response per run, with an optional note. The planned independent and researcher-specific assessments are described in the [technical appendix](TECHNICAL_APPENDIX.md).
 7. **Analysis.** From the run files: classification counts, alignment, divergence distribution, threshold robustness.
 8. **Archive** the condition (Findings → *Start a fresh experiment*) before beginning the next; the archive manifest is the boundary marker between conditions.
 
 # 6. Data and instruments
 
-Each run yields a complete provenance file (see the Technical Specification, §5.1): trigger, every turn, all scores, model identity, and the human decision. Analysis needs no instrumentation beyond these files.
+Run files retain the implemented assessment outputs and available provenance (see the Technical Specification, §5.1). A participant study may require additional evaluation records and the matching code revision; the [technical appendix](TECHNICAL_APPENDIX.md) describes the planned evaluation.
 
 Qualitative material worth collecting alongside: researchers' free-text notes at validation, and short debriefs on *why* they accepted or declined. These explain divergences that numbers alone cannot.
 
@@ -104,19 +103,6 @@ Qualitative material worth collecting alongside: researchers' free-text notes at
 | Threshold arbitrariness | preregistration + robustness appendix | classification boundaries remain stipulated |
 | Model drift over time | model recorded per run; date-stamped | replication may not reproduce exactly |
 
-# 8. Open questions **[DECIDE]**
+# 8. Development stage
 
-1. Conditions to run, and in what order (§3.1).
-2. Sampling: full unconnected set, or lowest-*k* plus a high-predictability comparison group (§3.2).
-3. One validator per pair or both members (§5.6).
-4. Blinding of validators to condition (§3.1).
-5. Whether unverified representations may appear on either side (§5.2).
-6. Trigger framing in the paper: contribution or limitation (§2).
-7. Screening loop (`docs/specs/2026-07-24-screening-loop-design.md`): whether a lexical pre-filter before LLM screening is acceptable, and whether researcher comments scope to one pair or to all of that researcher's pairs.
-8. Whether "defer" and similar prototype affordances are switched off for the study.
-9. Repeat runs per pair, and whether reported ECP is one run or the median of *k* (§3.3).
-10. Whether each run records the prompt version that produced it (§3.3).
-
-# 9. Timeline
-
-Submission (short paper, technical appendix, Git repository) is due end of 2026; a finished prototype is not required at submission, and a year of development follows acceptance. The near-term critical path is therefore: **Pure data access → representation verification by real researchers → a first condition with live runs**, not further feature work.
+The submission presents the current prototype and a proposal for further development. Participant evaluation and the agent-arena extension belong to a subsequent research stage. The current technical appendix describes the proposed pilot and the distinction between implemented feedback and planned independent evaluation.

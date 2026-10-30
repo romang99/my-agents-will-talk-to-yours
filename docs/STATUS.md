@@ -2,7 +2,7 @@
 title: "ResearcherConnect — Status"
 subtitle: "Where things stand, what the live runs have shown, what is open"
 author: "Nadine Ostern & Marek Kowalkiewicz · Queensland University of Technology"
-date: "28 October 2026"
+date: "31 October 2026"
 ---
 
 > A snapshot. Update the date when you change it. For the *why* behind anything here,
@@ -72,12 +72,12 @@ case produced ECP 0 in offline demo testing.
 # 4. Known gaps, not yet built
 
 - **Verification guard.** A loud warning (or a block) when a live run would use a real
-  researcher's unverified profile. Offered during development; awaiting a yes from the owner.
+  researcher's unverified profile. This guard is not implemented in the current release.
 - **Collaborator-name filter** for judge prompts (observation 3).
 - **Cross-vendor judge driver** (observation 5).
 - **Prompt version on conversation runs.** Judge runs snapshot the full prompt; conversation
   runs do not record which persona/conversation/synthesizer wording produced them
-  (protocol open item 10).
+  (RESEARCH_PROTOCOL §3.3).
 - **Verification as a timestamped, attributed event** rather than a boolean (ethics §4).
 - **Participant access to every run they appear in** (ethics §6).
 - **Withdrawal from past run records** (ethics §5): manual archiving only.
@@ -87,40 +87,10 @@ case produced ECP 0 in offline demo testing.
   cut on 28 October 2026; live runs and all real-person profiles stay in the private development
   clone. Keep it that way: [PUBLISHING_CHECKLIST](PUBLISHING_CHECKLIST.md).
 
-# 5. Open decisions, consolidated
+# 5. Study and publication status
 
-The authors' calls. Each is argued in the document cited.
+The current release supports prototype demonstration and pair assessment. No formal study is reported. Participant evaluation requires a separately governed study with reviewed representations, appropriate comparison conditions and documented measurement provenance; see [RESEARCH_PROTOCOL](RESEARCH_PROTOCOL.md) and [DATA_ETHICS](DATA_ETHICS.md).
 
-| Decision | Where |
-|---|---|
-| Conditions to run and their order (trigger vs none; representation depth; unguided vs guided judge) | protocol §3.1, §8.1 |
-| Sampling: all unconnected pairs, or a predictability-stratified sample; size | protocol §3.2; spec 2026-09-10 point 4 |
-| Repeats per pair; reported ECP as mean of *k* | protocol §3.3, §8.9 |
-| API path with controlled sampling vs CLI | DECISIONS D21 |
-| One validator per pair or both; blinding to condition | protocol §8.3–4 |
-| Whether unverified representations may appear on either side of a pair | protocol §8.5 |
-| Trigger-as-focus: contribution or limitation | protocol §2 |
-| Cross-vendor judges | DECISIONS D22 |
-| Ethics pathway, LLM-provider data position, Pure terms, withdrawal, disposal, recruitment wording | ethics §9 |
-| Copyright holder on the MIT licence: the authors or QUT | LICENSE, README |
+The implemented feedback records one response per run. Independent assessment of research sketches and separate judgments from the represented researchers are proposed in the [technical appendix](TECHNICAL_APPENDIX.md). Agent-arena mechanisms remain future development.
 
-# 6. Next steps, in order
-
-For the submission (owner in brackets; see [HANDOVER](HANDOVER.md)):
-
-1. Public repository from the clean snapshot; choose a licence; run the publishing
-   checklist (Roman).
-2. Technical appendix drafted from the source map in [TECHNICAL_APPENDIX](TECHNICAL_APPENDIX.md) (Roman).
-3. The 2,000-word proposal (Nadine, Marek).
-
-For the study, after submission:
-
-4. Run Lena Fischer live in judge mode, unguided and guided. If the judge cannot say no,
-   stop and rethink the prompt before any data collection.
-5. Live-study participants review their representations and confirm verification in the private study workspace.
-6. Exercise the API provider on a synthetic pair; confirm repeats vary.
-7. Decide sampling and conditions (§5), freeze prompts and thresholds, record them in the
-   protocol as preregistered.
-8. In a separately governed private study copy, collect and verify participant profiles
-   before live use. Keep them in ignored runtime stores, never in the shared seed file.
-9. Design the agent-arena stage (HANDOVER §3) as a new design record under `specs/`.
+The repository includes an MIT licence crediting Marek Kowalkiewicz and Nadine Ostern. Whether institutional ownership requires a different copyright holder is not established in this documentation; the licence attribution is unchanged by this documentation revision.

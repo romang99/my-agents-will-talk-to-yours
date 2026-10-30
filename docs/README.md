@@ -30,8 +30,8 @@ paragraphs, gives a reading order by role, and gets you running in an hour.
 
 | Document | For | Read it when |
 |---|---|---|
-| [Research Protocol](RESEARCH_PROTOCOL.md) | Nadine & Marek | Before collecting any data — design, conditions, measures, open decisions |
-| [Data & Ethics Statement](DATA_ETHICS.md) | Nadine & Marek | Before inviting anyone outside the two authors to participate |
+| [Research Protocol](RESEARCH_PROTOCOL.md) | Nadine & Marek | Proposed evaluation, candidate conditions, measures and current study status |
+| [Data & Ethics Statement](DATA_ETHICS.md) | Nadine & Marek | Data practices, implemented controls and requirements of a participant study |
 | [Technical Appendix](TECHNICAL_APPENDIX.md) | Organization Science reviewers | The paper-facing account; its preamble maps each section to its source document |
 | [Publishing Checklist](PUBLISHING_CHECKLIST.md) | whoever pushes | **Before publishing or pushing** — audit the tree and reachable history for excluded data and credentials |
 

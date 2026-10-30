@@ -103,6 +103,6 @@ implemented prototype retains the name ResearcherConnect.
 
 # 6. Who to ask
 
-Marek for the code, the data archive and infrastructure; Nadine for the research design,
-the framing and anything marked **[DECIDE]** or **[TO CONFIRM]** in the protocol and the
-ethics statement.
+Marek is the contact for the code, private development archive and infrastructure;
+Nadine for the research design and framing. Study design and participant-study
+governance are agreed by the research team before study use.

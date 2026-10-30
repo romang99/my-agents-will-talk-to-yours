@@ -40,7 +40,7 @@ kept as the documented failure path and a possible explainer; the paper tells th
 
 | If you are… | Read, in this order |
 |---|---|
-| **Deciding the study** (Nadine) | [STATUS](STATUS.md) → [RESEARCH_PROTOCOL](RESEARCH_PROTOCOL.md) §3 and §8 → [DATA_ETHICS](DATA_ETHICS.md) §9 → [specs/2026-09-10](specs/2026-09-10-search-centric-redesign.md) Part 2 |
+| **Deciding the study** (Nadine) | [STATUS](STATUS.md) → [RESEARCH_PROTOCOL](RESEARCH_PROTOCOL.md) §§3–7 → [DATA_ETHICS](DATA_ETHICS.md) §§4–7 → [specs/2026-09-10](specs/2026-09-10-search-centric-redesign.md) Part 2 |
 | **Running the study** (a research assistant) | this page → [PROTOTYPE_GUIDE](PROTOTYPE_GUIDE.md) → [WORKING_WITH_RUNS](WORKING_WITH_RUNS.md) → RESEARCH_PROTOCOL §5 |
 | **Changing the code** | this page → [../ARCHITECTURE.md](../ARCHITECTURE.md) → [TECHNICAL_SPECIFICATION](TECHNICAL_SPECIFICATION.md) → [../CONTRIBUTING.md](../CONTRIBUTING.md) → [../CLAUDE.md](../CLAUDE.md) |
 | **Understanding why it is the way it is** | [DECISIONS](DECISIONS.md) (timeline and decision log) → the design records under `specs/` |
@@ -162,7 +162,7 @@ study, and compare the named prompt variants. Unanimity alone is not validation.
 
 **The judges disagree on nothing across repeats.** On the CLI path, sampling appears to be
 near-deterministic, so repeats may not be drawing from a distribution. The API path exposes
-sampling parameters; this is open item 2 in STATUS.
+sampling parameters; the sampling limitations are described in STATUS §3.
 
 **A pair I expected is not in the queue.** The queue shows the twelve least predictable
 unconnected pairs and says how many exist. Use *From …* to focus on one researcher, or click
@@ -184,6 +184,6 @@ colour-vision deficiency and the owner dislikes dark mode. Do not add one casual
 
 # 7. Who to ask
 
-Marek Kowalkiewicz built the prototype (with Claude Code) and owns the codebase; Nadine
-Ostern co-owns the research design. Study decisions marked **[DECIDE]** in the protocol and
-**[TO CONFIRM]** in the ethics statement are theirs to make, not a contributor's.
+Marek Kowalkiewicz built the prototype (with Claude Code) and is the contact for the
+codebase; Nadine Ostern co-owns the research design. Study design and governance are
+agreed by the research team.
