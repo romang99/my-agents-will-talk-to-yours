@@ -10,7 +10,7 @@ The **proposed agent arena** is the next development stage. It will investigate 
 
 Built as the prototype for an *Organization Science* Call for Prototypes submission by **Nadine Ostern** and **Marek Kowalkiewicz** (QUT). It is the visual successor to SyncMinds v0.1 (Python/Streamlit, `OrgSci/syncminds/` — a sibling folder on Marek's machine, not part of this repository).
 
-**Technical appendix:** [Markdown](docs/TECHNICAL_APPENDIX.md) · [Word](docs/20261029_Technical_Appendix_OrgScience.docx) · [PDF](docs/Technical_Appendix_Welcome_to_the_Jungle.pdf).
+**Technical appendix:** [Markdown](docs/TECHNICAL_APPENDIX.md) · [PDF](docs/Technical_Appendix_Welcome_to_the_Jungle.pdf).
 
 **New to the project?** Read [docs/ONBOARDING.md](docs/ONBOARDING.md) first; it carries the context the code cannot.
 

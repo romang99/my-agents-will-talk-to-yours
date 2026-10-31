@@ -14,7 +14,7 @@ The proposed agent arena will investigate alternative multi-agent arrangements f
 
 ## Document versions and historical titles
 
-The [technical appendix](../TECHNICAL_APPENDIX.md), its [Word version](../20261029_Technical_Appendix_OrgScience.docx) and [PDF version](../Technical_Appendix_Welcome_to_the_Jungle.pdf) give the current submission-facing account. The root [README](../../README.md) is the repository entry point.
+The technical appendix in [Markdown](../TECHNICAL_APPENDIX.md) and [PDF](../Technical_Appendix_Welcome_to_the_Jungle.pdf) gives the current submission-facing account. The root [README](../../README.md) is the repository entry point.
 
 Earlier dated design records remain unchanged, including the former paper title in the [24 July design](2026-07-24-researcherconnect-design.md). Those records document the project's development; earlier titles do not identify the current submission. ResearcherConnect remains the name of the implemented artifact, and SyncMinds v0.1 remains its predecessor.
 

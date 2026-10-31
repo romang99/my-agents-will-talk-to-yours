@@ -2,7 +2,7 @@
 
 **Current submission:** *WELCOME TO THE JUNGLE: AGENT ARENAS, UNLIKELY COLLABORATIONS, AND THE SEARCH FOR SCIENTIFIC IDEAS THAT MATTER*. ResearcherConnect v0.3 is the implemented pair-assessment prototype; the agent arena is planned development.
 
-**Technical appendix:** [Markdown](TECHNICAL_APPENDIX.md) · [Word](20261029_Technical_Appendix_OrgScience.docx) · [PDF](Technical_Appendix_Welcome_to_the_Jungle.pdf).
+**Technical appendix:** [Markdown](TECHNICAL_APPENDIX.md) · [PDF](Technical_Appendix_Welcome_to_the_Jungle.pdf).
 
 **New here? Start with [ONBOARDING](ONBOARDING.md).** It explains the project in four
 paragraphs, gives a reading order by role, and gets you running in an hour.
@@ -57,4 +57,4 @@ Repository-level: [README](../README.md) (setup and orientation), [ARCHITECTURE]
 npm run docs
 ```
 
-Renders the Markdown documentation to `docs/pdf/`. Requires [pandoc](https://pandoc.org) and Google Chrome; those generated files are untracked build output. The submission appendix linked above is separately maintained in tracked Markdown, Word and PDF forms. Keep those three versions aligned when editing the appendix.
+Renders the Markdown documentation to `docs/pdf/`. Requires [pandoc](https://pandoc.org) and Google Chrome; those generated files are untracked build output. The submission appendix linked above is separately maintained in tracked Markdown and PDF forms. Keep both versions aligned when editing the appendix.
